@@ -1,22 +1,18 @@
 <?php
-    $con = mysqli_connect('localhost','root');
+ include 'dbconnect.php';
     
-    if($con) {
-        echo "Connection Successful";
-    }
-    else {
-        echo "Connection Failed";
-    }
     
-    mysqli_select_db($con, 'user info');
     
-    $name = $_POST['name'];
-    $name = $_POST['email'];
-    $name = $_POST['number'];
+    $result = mysqli_query($conn, "select * from userinfo");
     
-    $query = "INSERT INTO user (name, email, number) VALUES ('$name', '$email', '$number')";
+   while($row=mysqli_fetch_array($result))
+   {
+       echo $row['name'] . " " . $row['email']. "<br>";
+   }
     
-    mysqli_query($con, $query);
-    header('location:final.php');
+   // $query = "INSERT INTO user info (name, email, password) VALUES ('$name', '$email', '$password')";
+    
+    //mysqli_query($conn, $query);
+    //header('location:final.php');
     
 ?>
