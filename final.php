@@ -6,16 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <?php require('json.php') ?>
+    <ul>
+    <li><a href="json.php">Users</a></li>
+    <li><a href="about.php">Info</a></li>
+    </ul>
+    
 </head>
 <body>
+<link rel="stylesheet" href="style.css">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="#">Photo Gallery</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-
+<!--line 23-44 I am creating my categories and what I want them to display-->
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
@@ -43,7 +47,7 @@
     
   </div>
 </nav>
-
+<!--Here I have my slides--> 
 <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -89,13 +93,13 @@
     <div class="container-fluid">
         <div class="row">
     <div class="col-lg-4 col-md-4 col-12">
-        <img src="nature_1.jpg" class=img-fluid ph-3">
+        <img src="nature_1.jpg" class="d-block w-100">
     </div>
     <div class="col-lg-4 col-md-4 col-12">
-        <img src="nature_2.jpg" class="img-fluid pb-3">
+        <img src="nature_2.jpg" class="d-block w-100">
     </div>
      <div class="col-lg-4 col-md-4 col-12">
-        <img src="nature_3.jpg" class="img-fluid pb-3">
+        <img src="nature_3.jpg" class="d-block w-100">
     </div>
     </div>
     </div>
@@ -111,13 +115,13 @@
     <div class="container-fluid">
         <div class="row">
     <div class="col-lg-4 col-md-4 col-12">
-        <img src="architecture_1.jpg" class=img-fluid ph-3">
+        <img src="architecture_1.jpg" class="d-block w-100">
     </div>
     <div class="col-lg-4 col-md-4 col-12">
-        <img src="architecture_2.jpg" class="img-fluid pb-3">
+        <img src="architecture_2.jpg" class="d-block w-100">
     </div>
      <div class="col-lg-4 col-md-4 col-12">
-        <img src="architecture_3.jpg" class="img-fluid pb-3">
+        <img src="architecture_3.jpg" class="d-block w-100">
     </div>
     </div>
     </div>
@@ -133,19 +137,19 @@
     <div class="container-fluid">
         <div class="row">
     <div class="col-lg-4 col-md-4 col-12">
-        <img src="travel_1.jpg" class="img-fluid ph-3">
+        <img src="travel_1.jpg" class="d-block w-100">
     </div>
     <div class="col-lg-4 col-md-4 col-12">
-        <img src="travel_2.jpg" class="img-fluid pb-3">
+        <img src="travel_2.jpg" class="d-block w-100">
     </div>
      <div class="col-lg-4 col-md-4 col-12">
-        <img src="travel_3.jpg" class="img-fluid pb-3">
+        <img src="travel_3.jpg" class="d-block w-100">
     </div>
     </div>
     </div>
 </section>
 </a>
-
+<!--line 152-173 provide a means of contact-->
 <a id="contact">
 <section class="my-4">
     <div class="py-4">
@@ -163,8 +167,8 @@
             <input type="email" name="email" class="form-control">
         </div>
          <div class="form-group">
-            <label>Number:</label>
-            <input type="text" name="number" class="form-control">
+            <label>password:</label>
+            <input type="text" name="password" class="form-control">
         </div>
         <button type="submit" class="btn btn=success">Submit</button>
      </form>
@@ -172,6 +176,7 @@
 </section>
 </a>
 
+<!--the overall goal of the page-->
 <a id="about">
 <section class="my-4">
     <div class="py-4">
