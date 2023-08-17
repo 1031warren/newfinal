@@ -1,3 +1,4 @@
+<li><a href="final.php">Home</a></li>
 <?php
 
 //All listed names are current users of the site
@@ -70,3 +71,11 @@ $userData = json_decode($jsonData, true);
       ?>    
   </body>
 </html>
+
+
+
+
+
+
+
+
